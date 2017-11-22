@@ -530,7 +530,7 @@
         // Zum Aufbau der Verbindung zur Datenbank
         define ( 'MYSQL_HOST',      'localhost' );
         define ( 'MYSQL_BENUTZER',  'root' );
-        define ( 'MYSQL_KENNWORT',  'linkstart' );
+        define ( 'MYSQL_KENNWORT',  '' );
         define ( 'MYSQL_DATENBANK', 'ishutter' );
 
         $db_link = mysqli_connect (MYSQL_HOST,
@@ -588,20 +588,16 @@
             echo "<br>";
             echo "<button type=\"button\" class=\"btn btn-info\">Details</button>";
             echo "</td>";
+            if(($i+1) % 4 == 0)
+            {
+                echo '</tr>';
+                echo '<tr>';
+            }
         }
-        echo "</table></tr>";
+        echo "</tr></table>";
 
         ?>
 
-
-        <table>
-            <tr>
-                <?php
-
-                ?>
-            </tr>
-        </table>
-        </div>
 
     <footer class="sticky-footer">
       <div class="container">
