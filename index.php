@@ -523,19 +523,16 @@
       </div>-->
           <!-- /Card Columns-->
 
-        <!--<table>
+        <table>
             <tr>
-            -->    <?php
+                <?php
                 for ($i = 1; $i <= 5; $i++)
                 {
-					echo "<div>";
-					echo "<h3>Jalosuie $i</h3>";
-                    echo "<td><img class=\"img-fluid col-sm-3\" src=\"https://unsplash.it/700/450?image=610\" alt=\"\"></td>";
-					echo "</div>";
-				}
+                    echo "<td><img class=\"card-img-top img-fluid w-100\" src=\"https://unsplash.it/700/450?image=610\" alt=\"\"></td>";
+                }
                 ?>
-            </tr><!--
-        </table>-->
+            </tr>
+        </table>
         </div>
         <!--<div class="col-lg-4">
           <!-- Example Pie Chart Card-->
