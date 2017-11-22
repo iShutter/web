@@ -530,7 +530,7 @@
         // Zum Aufbau der Verbindung zur Datenbank
         define ( 'MYSQL_HOST',      'localhost' );
         define ( 'MYSQL_BENUTZER',  'root' );
-        define ( 'MYSQL_KENNWORT',  '' );
+        define ( 'MYSQL_KENNWORT',  'linkstart' );
         define ( 'MYSQL_DATENBANK', 'ishutter' );
 
         $db_link = mysqli_connect (MYSQL_HOST,
